@@ -1,10 +1,30 @@
-body {
-  width: 100%;
-  margin: auto;
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../font/Raleway-Regular.ttf") format("ttf");
 }
 
-#page {
-  font-family: "Raleway", sans-serif;
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("../font/Raleway-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url("../font/Raleway-ExtraBold.ttf") format("ttf");
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+* {
+  font-family: "Raleway-Bold";
+}
+
+.container {
+  width: 80%;
+  margin: auto;
 }
 
 /* header */
@@ -15,73 +35,66 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   z-index: 65;
 }
 
-#logo {
-  margin-left: 60px;
-}
-
-#nav-header ul {
+.nav-header ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
   margin: 0;
 }
 
-#nav-header li {
+.nav-header li {
   margin-right: 30px;
   text-align: center;
 }
 
-#nav-header a {
+.nav-header a {
   color: black;
   font-weight: 500;
   text-decoration: none;
   font-size: 0.7em;
-  padding-top: 45px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 25px 15px 0 15px;
 }
-#nav-header #subscribe {
+.nav-header .subscribe {
   color: #0065fc;
   font-weight: 700;
 }
 
-#nav-header a:focus {
+.nav-header a:hover {
   border-top: 2px solid #0065fc;
   color: #0065fc;
 }
 
 /* recherche et filtre */
 
-#intro h1 {
-  font-size: 1.1em;
+.intro h1 {
+  font-size: 1em;
   font-weight: 700;
 }
 
-#intro p {
-  font-size: 0.8em;
+.intro p {
+  font-size: 0.7em;
   font-weight: 500;
 }
 
-#recherche-filtre {
-  margin-left: 20px;
-}
-
-#recherche {
+.recherche {
   display: flex;
 }
 
-#recherche #map {
+.recherche .fas {
   padding: 10px;
   background-color: #f2f2f2;
   border-top-left-radius: 30%;
   border-bottom-left-radius: 30%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#recherche #search-button {
+.recherche .search-button {
   background-color: #0065fc;
   color: #fff;
   border: none;
@@ -89,14 +102,14 @@ header {
   border-bottom-right-radius: 13px;
 }
 
-#recherche #search {
+.recherche .search {
   border: 1px solid #f2f2f2;
   height: 40px;
   width: 150px;
 }
 
-#filtres {
-  margin-top: 40px;
+.filtres {
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -106,50 +119,68 @@ header {
   margin-right: 40px;
   border: 2px solid #e6e6e6;
   border-radius: 50px;
+  position: relative;
+  padding: 8px;
+  cursor: pointer;
 }
 
 .filtre-titre {
   margin-right: 40px;
 }
 
-.filtre span,
 .filtre-titre span {
   font-weight: 700;
-  font-size: 0.9em;
-  padding: 10px;
+  font-size: 0.7em;
 }
 
-#icon-filtre1,
-#icon-filtre2,
-#icon-filtre3,
-#icon-filtre4 {
+.filtre span {
+  font-weight: 700;
+  font-size: 0.7em;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.filtre .fas {
   color: #0065fc;
   background-color: #deebff;
+  border: 2px solid #deebff;
   border-radius: 50%;
-  width: 25px;
-  padding: 12px;
-  height: 25px;
+  width: 20px;
+  padding: 10px;
+  height: 20px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  left: -2px;
+  top: -2px;
 }
 
-#icon-info {
+.filtre:hover {
+  background-color: #deebff;
+  border-color: #deebff;
+}
+
+.filtre:hover span {
+  color: #0065fc;
+}
+
+.info .fas {
   color: #0065fc;
   background-color: transparent;
   border: 1px solid #e6e6e6;
   border-radius: 50%;
-  padding: 5px;
+  padding: 5px 8px;
   margin-right: 20px;
   font-size: 10px;
 }
 
-#info span {
+.info span {
   font-size: 0.7em;
   font-weight: 500;
 }
 
-#info {
+.info {
   margin-top: 20px;
 }
 
@@ -157,12 +188,19 @@ header {
 
 footer {
   background-color: #f2f2f2;
+}
+
+footer .container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 30px;
   padding: 40px;
+}
+
+footer ul {
+  padding: 0;
 }
 
 footer li {
@@ -177,8 +215,6 @@ footer h3 {
   font-weight: bold;
 }
 
-.propos,
-.hebergement,
-.assistance {
-  margin-right: 200px;
+.footer-liste {
+  margin-right: 100px;
 }

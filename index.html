@@ -11,86 +11,85 @@
         <meta property="og:url" content="" />
         <meta property="og:image" content="" />
 
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <link rel="shortcut icon" type="image/x-icon" href="">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="CSS/styles.css">
 
-        <title>Reserviay</title>
+        <title>Reservia</title>
     </head>
 
     <body>
-
-        <div id="page">
-            <header id="header">
-                <div id="logo"> <img src="images/logo/Reservia.svg" alt="logo reservia" /> </div>
-                    <nav id="nav-header">
-                        <ul>
-                            <li><a href="#hébergements">Hébergements</a></li>
-                            <li><a href="#activité">Activité</a></li>
-                            <li><a id="subscribe" href="">S'inscrire</a></li>
-                        </ul>
-                    </nav>
+        <div class="container">
+            <header>
+                <img  class="logo" src="images/logo/Reservia.svg" alt="logo reservia" />
+                <nav class="nav-header">
+                    <ul>
+                        <li><a href="#hébergements">Hébergements</a></li>
+                        <li><a href="#activité">Activité</a></li>
+                        <li><a class="subscribe" href="#">S'inscrire</a></li>
+                    </ul>
+                </nav>
             </header>
 
-            <section id="recherche-filtre">
-                <div id="intro">
+            <section class="recherche-filtre">
+                <div class="intro">
                     <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
-                <div id="recherche">
-                    <i id="map" class="fas fa-map-marker-alt"></i>
-                    <input type="text" id="search" name="search">
-                    <button id="search-button">Rechercher</button>
+                <div class="recherche">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="search" class="search" name="search">
+                    <button class="search-button">Rechercher</button>
                 </div>
-                <div id="filtres">
+                <div class="filtres">
                     <div class="filtre-titre">
                        <span>Filtres</span>
                     </div>
                     <div class="filtre">
-                        <i id="icon-filtre1" class="fas fa-money-bill-wave"></i><span>Économique</span>
+                        <i class="fas fa-money-bill-wave"></i><span>Économique</span>
                     </div> 
                     <div class="filtre">
-                        <i id="icon-filtre2" class="fas fa-child"></i><span>Familial</span>
+                        <i class="fas fa-child"></i><span>Familial</span>
                     </div> 
                     <div class="filtre">
-                        <i id="icon-filtre3" class="fas fa-heart"></i><span>Romantique</span>
+                        <i class="fas fa-heart"></i><span>Romantique</span>
                     </div>
                     <div class="filtre">
-                        <i id="icon-filtre4" class="fas fa-dog"></i><span>Animaux autorisés</span>
+                        <i class="fas fa-dog"></i><span>Animaux autorisés</span>
                     </div>
                 </div>
-                <div id="info">
-                    <i id="icon-info" class="fas fa-info"></i><span>Plus de 500 logements sont disponible dans cette ville</span>
+                <div class="info">
+                    <i class="fas fa-info"></i><span>Plus de 500 logements sont disponible dans cette ville</span>
                 </div>
                 
             </section>
-
-            <footer id="footer">
-                    <div class="propos">
-                        <h3>A propos</h3>
-                        <div  id="liste">
-                            <li>Fonctionnement du site</li>
-                            <li>Conditions générales de vente</li>
-                            <li>Données et confidentialité</li>
-                        </div>
-                    </div>
-                    <div class="hebergement">
-                        <h3>Nos hébergements</h3>
-                        <div  id="liste">
-                            <li>Charte qualité</li>
-                            <li>soumettre votre hotel</li>
-                        </div>
-                    </div>
-                    <div class="assistance">
-                        <h3>Assistance</h3>
-                        <div  id="liste">
-                            <li>Centre d'aide</li>
-                            <li>Nous contacter</li>
-                        </div>
-                    </div>
-            </footer>
-
         </div>
+
+        <footer>
+            <div class="container">
+                <div  class="footer-liste">
+                    <ul>
+                        <h3>A propos</h3>
+                        <li>Fonctionnement du site</li>
+                        <li>Conditions générales de vente</li>
+                        <li>Données et confidentialité</li>
+                    </ul>
+                </div>
+                <div  class="footer-liste">
+                    <ul>
+                        <h3>Nos hébergements</h3>
+                        <li>Charte qualité</li>
+                        <li>soumettre votre hotel</li>
+                    </ul>
+                </div>
+                <div  class="footer-liste">
+                    <ul>
+                        <h3>Assistance</h3>
+                        <li>Centre d'aide</li>
+                        <li>Nous contacter</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
