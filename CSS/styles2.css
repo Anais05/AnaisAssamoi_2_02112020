@@ -1,8 +1,8 @@
 @media screen and (max-width: 1165px) {
   .container {
     width: 95%;
-    margin: auto;
   }
+
   #hebergements {
     display: flex;
     flex-direction: column-reverse;
@@ -11,29 +11,25 @@
   .populaires {
     width: 100%;
   }
-
   .liste-hebergement {
     height: 560px;
     margin-top: 50px;
   }
-
   .choix {
     width: 30%;
     height: 35%;
   }
-
   .populaires {
     height: 260px;
   }
-
   .pop {
     width: 30%;
     height: 45%;
   }
-
   .etoiles .fas {
     font-size: 12px;
   }
+
   h2 .fas {
     padding-right: 40px;
   }
@@ -43,12 +39,11 @@
     display: none;
   }
   .responsive-header {
-    height: 150px;
+    height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
-
   .responsive-header-top {
     display: flex;
     flex-direction: row;
@@ -63,13 +58,11 @@
     padding: 0;
     width: 100%;
   }
-
   .responsive-nav-header li {
     text-align: center;
     padding-bottom: 20px;
     width: 50%;
   }
-
   .responsive-nav-header a {
     color: black;
     font-family: "Raleway Bold";
@@ -82,9 +75,73 @@
     font-family: "Raleway Bold";
     text-decoration: none;
   }
-
   .responsive-nav-header li:hover {
     border-bottom: 2px solid #0065fc;
     color: #0065fc;
+  }
+
+  .liste-hebergement {
+    height: 900px;
+  }
+  .choix {
+    width: 40%;
+    height: 25%;
+  }
+  .populaires {
+    height: 550px;
+  }
+  .pop {
+    width: 90%;
+    height: 24%;
+  }
+
+  .activite-card {
+    flex-direction: row;
+  }
+  .big,
+  .small {
+    width: 45%;
+    height: 27%;
+  }
+  .big .img-activite,
+  .small .img-activite {
+    height: 70%;
+  }
+}
+@media screen and (max-width: 580px) {
+  footer .container {
+    display: block;
+  }
+  .footer-liste {
+    margin-right: 0;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .liste-hebergement {
+    height: 1500px;
+  }
+  .choix {
+    width: 90%;
+    height: 13%;
+  }
+
+  .activite-card {
+    height: 1100px;
+  }
+  .big,
+  .small {
+    width: 90%;
+    height: 15%;
+  }
+
+  .search-button .search-button-text {
+    display: none;
+  }
+  .search-button .search-button-icon {
+    display: block;
+    color: #fff;
+    padding: 5px;
+    background-color: transparent;
   }
 }

@@ -59,7 +59,7 @@ body {
   font-family: "Raleway Bold";
   text-decoration: none;
   font-size: 1em;
-  padding: 25px 15px 0 15px;
+  padding: 20px 15px 0;
 }
 .nav-header .subscribe {
   color: #0065fc;
@@ -100,13 +100,24 @@ body {
   justify-content: center;
 }
 
+input {
+  font-family: "Raleway Bold";
+}
+
 .recherche .search-button {
   background-color: #0065fc;
-  color: #fff;
   border: none;
   border-top-right-radius: 13px;
   border-bottom-right-radius: 13px;
+}
+
+.search-button .search-button-text {
+  color: #fff;
   font-family: "Raleway Bold";
+}
+
+.search-button .search-button-icon {
+  display: none;
 }
 
 .recherche .search {
@@ -320,11 +331,11 @@ h2 {
 
 .pop p {
   font-size: 0.6em;
-  margin-left: 8px;
+  margin-left: 10px;
 }
 
 .pop .etoiles {
-  margin: 15px 8px 0;
+  margin: 15px 10px 0;
 }
 
 /* activites */
@@ -332,6 +343,10 @@ h2 {
 #activites {
   width: 100%;
   margin: 50px 0;
+}
+
+#activites h2 {
+  padding: 10px 0 0 10px;
 }
 
 .activite-card {
@@ -387,6 +402,7 @@ h2 {
   font-size: 0.6em;
   padding: 10px;
   color: #000;
+  font-family: "Raleway Bold";
 }
 
 /* footer */
@@ -398,10 +414,7 @@ footer {
 footer .container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-top: 30px;
-  padding: 40px;
+  padding: 30px 0;
 }
 
 footer ul {
