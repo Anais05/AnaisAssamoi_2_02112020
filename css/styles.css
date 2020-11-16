@@ -140,6 +140,9 @@ input {
   position: relative;
   padding: 8px;
   cursor: pointer;
+  display: flex;
+  height: 25px;
+  align-items: center;
 }
 
 .filtre-titre {
