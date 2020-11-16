@@ -350,7 +350,7 @@ h2 {
 }
 
 #activites h2 {
-  padding: 10px 0 0 10px;
+  width: auto;
 }
 
 .activite-card {
