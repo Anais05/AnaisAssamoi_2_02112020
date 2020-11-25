@@ -29,17 +29,20 @@ body {
 
 /* header */
 
-.responsive-header {
-  display: none;
+header {
+  height: 65px;
+  display: grid;
+  grid-template-areas: "logo . nav-bar subscribe";
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
 }
 
-.desktop {
-  height: 65px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
+.logo {
+  grid-area: logo;
+}
+
+.nav-header {
+  grid-area: nav-bar;
 }
 
 .nav-header ul {
@@ -59,16 +62,19 @@ body {
   font-family: "Raleway Bold";
   text-decoration: none;
   font-size: 1em;
-  padding: 20px 15px 0;
-}
-.nav-header .subscribe {
-  color: #0065fc;
-  font-family: "Raleway Bold";
+  padding: 19px 15px 0;
 }
 
 .nav-header a:hover {
   border-top: 2px solid #0065fc;
   color: #0065fc;
+}
+
+.subscribe {
+  color: #0065fc;
+  font-family: "Raleway Bold";
+  text-decoration: none;
+  grid-area: subscribe;
 }
 
 /* recherche et filtre */

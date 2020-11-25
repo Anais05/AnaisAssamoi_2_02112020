@@ -35,49 +35,35 @@
   }
 }
 @media screen and (max-width: 780px) {
-  .desktop {
-    display: none;
+  header {
+    height: 190px;
+    grid-template-areas:
+      "logo subscribe"
+      "nav-bar nav-bar";
+    grid-template-columns: 1fr 1fr;
   }
-  .responsive-header {
-    height: 180px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .responsive-header-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .responsive-nav-header ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
+  .nav-header ul {
     padding: 0;
     width: 100%;
   }
-  .responsive-nav-header li {
+  .nav-header li {
     text-align: center;
     padding-bottom: 20px;
     width: 50%;
+    margin: 0;
   }
-  .responsive-nav-header a {
-    color: black;
-    font-family: "Raleway Bold";
-    text-decoration: none;
-    padding-bottom: 20px;
-    font-size: 1em;
-  }
-  .subscribe {
-    color: #0065fc;
-    font-family: "Raleway Bold";
-    text-decoration: none;
-  }
-  .responsive-nav-header li:hover {
+  .nav-header li:hover {
     border-bottom: 2px solid #0065fc;
     color: #0065fc;
+  }
+  .nav-header a {
+    padding: 0;
+  }
+  .nav-header a:hover {
+    border-top: none;
+  }
+  .subscribe {
+    text-align: end;
   }
 
   .liste-hebergement {
